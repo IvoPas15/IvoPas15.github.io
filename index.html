@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user_scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/6514356aa8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
+    <title>Proyecto CV</title>
+</head>
+<body>
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1><u>MAQUETA CV</u></h1>
+                <nav id="nav" class="seleccionado">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobre-mi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                        <li><a href="#habilidades" onclick="seleccionar(this)">HABILIADES</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <button class="btn-nav"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy Ivan Davalos..<span>&#160</span></h2>
+            <img src="img/fondo1.jpg" alt="imagen-de-un-chico">
+            <p class="descripcion">Aqui presentare mi CV, programado a traves de HTML, CSS y JavaScricpt.<br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos consequatur nobis quis tempora culpa nisi, aperiam deserunt perspiciatis dolor repudiandae nemo animi debitis, maxime repellat impedit expedita. Nesciunt, velit rem! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               
+            
+        </div>
+    </div>
+</section>
+
+<section id="sobre-mi">
+    
+    <div class="sobre-mi">
+        <p class="titulo-seccion">SOBRE MI</p>
+        <h3><strong>Hola soy Ivan Davalos,</h3>
+        <h4>estudiante en desarrollo web.</strong></h4>
+        <div class="contenedor-foto">
+        <img src="img/fondo1.jpg" alt="foto-perfil-CV">
+    </div>
+        <ul style="list-style: none;" class="lista-perfil">
+            <li>Nombre: Ivan Agustin.</li>
+            <li>Apellido: Davalos Cabello</li>
+            <li>Edad: 22 Años</li>
+            <li>Correo: ivanagustin157@gmail.com</li>
+        </ul><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aspernatur architecto culpa dolorem magni possimus alias odit rem maiores quo! Sequi optio obcaecati corrupti esse quaerat officiis corporis ea! Magnam? <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Commodi officia aperiam soluta numquam. Id, ipsa excepturi quisquam vero, esse at est inventore libero voluptatum, sequi dolores illo aliquam iure hic? <br> <br>
+        <strong><u>RECARGUE LA PAGINA PARA VER ANIMACION EN LAS BARRAS DE HABILIDADES</u></strong>
+        </p></div>
+</section>
+
+<section id="habilidades">
+    <div class="contenedor-habilidades" id="habilidades">
+        <h3>HABILIDADES</h3>
+        <div class="habilidades">
+            <div class="informacion">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        
+        <div class="habilidades">
+            <div class="informacion">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div> 
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<section id="contacto">  
+    <form class="contenedor-form">
+        <h2><strong><u>CONTACTO</u></strong></h2>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <input type="text" name="Apellido" placeholder="Apellido">
+        <input type="text" name="Correo" placeholder="Correo">
+        <textarea name="mensaje" placeholder="Escriba aqui su mensaje" ></textarea>
+        <a href="https://www.google.com/" target="_blank"><input type="button" value="ENVIAR  MENSAJE" id="boton"></a>
+    </form>
+</section>
+
+<footer>
+    <p>PAGINA CREADA POR IVAN DAVALOS - 2023</p> <br>
+    <div class="redes-footer">
+        <a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
